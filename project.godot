@@ -16,7 +16,7 @@ config/description="This demo shows a traditional isometric view with depth sort
 A character can move around the level and will also slide around objects,
 as well as be occluded when standing in front or behind them."
 config/tags=PackedStringArray("2d", "demo", "official", "tilemap")
-run/main_scene="res://dungeon.tscn"
+run/main_scene="uid://dp6nhu4e06lv8"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.webp"
 

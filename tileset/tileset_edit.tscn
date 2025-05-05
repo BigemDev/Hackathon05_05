@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4jfvc7j0jhmw"]
 
-[ext_resource type="Texture2D" uid="uid://dup8jrb6ajapx" path="res://tileset/isotiles.png" id="1"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ti2j"]
+load_path = "res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"
 
 [sub_resource type="OccluderPolygon2D" id="2"]
 polygon = PackedVector2Array(0, -100, -67, -68, -66, 0, -1, 33, 66, -2, 64, -67)
@@ -8,19 +9,19 @@ polygon = PackedVector2Array(0, -100, -67, -68, -66, 0, -1, 33, 66, -2, 64, -67)
 [node name="TilesetEdit" type="Node2D"]
 
 [node name="Base" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 region_enabled = true
 region_rect = Rect2(28, 75, 135, 105)
 
 [node name="Base2" type="Sprite2D" parent="."]
 position = Vector2(200, 0)
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 region_enabled = true
 region_rect = Rect2(221, 75, 135, 105)
 
 [node name="Wall" type="Sprite2D" parent="."]
 position = Vector2(400, 0)
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 offset = Vector2(0, -32)
 region_enabled = true
 region_rect = Rect2(28, 220, 140, 140)
@@ -36,7 +37,7 @@ occluder = SubResource("2")
 
 [node name="Column" type="Sprite2D" parent="."]
 position = Vector2(600, 0)
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 offset = Vector2(0, -32)
 region_enabled = true
 region_rect = Rect2(259, 241, 55, 95)
@@ -49,7 +50,7 @@ polygon = PackedVector2Array(-27, 7, -14, 20, 16, 20, 28, 4, 24, -12, 10, -22, -
 
 [node name="Door1" type="Sprite2D" parent="."]
 position = Vector2(800, 0)
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 offset = Vector2(0, -25)
 region_enabled = true
 region_rect = Rect2(54, 426, 85, 110)

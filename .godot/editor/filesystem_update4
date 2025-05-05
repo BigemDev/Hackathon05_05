@@ -1,11 +1,5 @@
-res://decorations/bone_pile_1.tscn
-res://decorations/bone_pile_2.tscn
-res://decorations/candle.tscn
-res://decorations/coin_pile.tscn
-res://decorations/internal_shadow.tscn
-res://decorations/vase_1.tscn
-res://decorations/vase_2.tscn
+res://tileset/tileset.tres
+res://dungeon.tscn
 res://player/goblin.tscn
 res://tileset/tileset_edit.tscn
-res://dungeon.tscn
-res://tileset/tileset.tres
+res://badawcza.tscn
