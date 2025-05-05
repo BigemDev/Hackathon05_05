@@ -46,6 +46,7 @@ region_rect = Rect2(259, 241, 55, 95)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Column/StaticBody2D"]
 position = Vector2(2, 0)
+scale = Vector2(1.28, 1.36)
 polygon = PackedVector2Array(-27, 7, -14, 20, 16, 20, 28, 4, 24, -12, 10, -22, -10, -22, -24, -12)
 
 [node name="Door1" type="Sprite2D" parent="."]

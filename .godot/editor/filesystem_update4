@@ -1,0 +1,8 @@
+res://dungeon.tscn
+res://tileset/tileset.tres
+res://player/goblin.tscn
+res://tileset/tileset_edit.tscn
+res://player/goblin.gd
+res://enemy.tscn
+res://enemy.gd
+res://player/hitbody.gd
