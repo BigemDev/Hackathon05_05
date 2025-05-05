@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dup8jrb6ajapx"
-path="res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"
+uid="uid://beia5ijhre8ag"
+path="res://.godot/imported/gameover screen.png-d88a2f4421f891e2bdbdbb6439123c8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/isotiles.png"
-dest_files=["res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"]
+source_file="res://gameover screen.png"
+dest_files=["res://.godot/imported/gameover screen.png-d88a2f4421f891e2bdbdbb6439123c8b.ctex"]
 
 [params]
 
