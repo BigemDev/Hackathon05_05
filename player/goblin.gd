@@ -57,3 +57,6 @@ func update_animation(anim_set):
 
 	$Sprite2D.play(anim_directions[anim_set][slice_dir][0])
 	$Sprite2D.flip_h = anim_directions[anim_set][slice_dir][1]
+
+static func lose_game():
+	print("PORAŻKA")

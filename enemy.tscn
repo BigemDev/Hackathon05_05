@@ -1,4 +1,4 @@
-[gd_scene load_steps=264 format=3 uid="uid://dkprlddkwifk2"]
+[gd_scene load_steps=265 format=3 uid="uid://dkprlddkwifk2"]
 
 [ext_resource type="Script" uid="uid://cr6kkox10fpum" path="res://enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://dpwpop61vufvt" path="res://player/goblin.png" id="2_qi2p4"]
@@ -1894,6 +1894,10 @@ height = 14.0
 [sub_resource type="OccluderPolygon2D" id="661"]
 polygon = PackedVector2Array(16.25, 18.75, 18.75, 36.25, 15, 38.75, 6.25, 42.5, -5, 42.5, -13.75, 41.25, -18.75, 37.5, -15, 20)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4gyqm"]
+radius = 20.0
+height = 52.0
+
 [node name="Enemy" type="CharacterBody2D"]
 script = ExtResource("1_4gyqm")
 
@@ -1921,3 +1925,13 @@ light_mask = 16
 position = Vector2(0, -31)
 scale = Vector2(0.8, 0.8)
 occluder = SubResource("661")
+
+[node name="Hitbody" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="Hitbox" type="CollisionShape2D" parent="Hitbody"]
+position = Vector2(0, -31)
+shape = SubResource("CapsuleShape2D_4gyqm")
+one_way_collision = true
+debug_color = Color(0.984091, 0, 0.346881, 0.42)

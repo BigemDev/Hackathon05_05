@@ -49,11 +49,11 @@ func updateDirection():
 
 func _physics_process(_delta):
 	updateDirection()
-	
+
 	var motion = direction
 	motion.y /= 2.0
 	motion = motion.normalized() * MOTION_SPEED
-	
+
 	set_velocity(motion)
 	move_and_slide()
 
@@ -62,6 +62,7 @@ func _physics_process(_delta):
 		update_animation("walk")
 	else:
 		update_animation("idle")
+
 
 func update_animation(anim_set):
 	var angle = rad_to_deg(last_direction.angle())

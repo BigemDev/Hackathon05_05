@@ -5,3 +5,4 @@ res://tileset/tileset_edit.tscn
 res://player/goblin.gd
 res://enemy.tscn
 res://enemy.gd
+res://player/hitbody.gd
