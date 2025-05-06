@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 [gd_scene load_steps=4 format=3 uid="uid://da8hhhds05rm5"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://dp6nhu4e06lv8"]
+>>>>>>> origin/portale-demo
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1_wvkx5"]
 [ext_resource type="PackedScene" uid="uid://bqpkxht3mx8l8" path="res://player/goblin.tscn" id="2_ay15r"]
 
 [sub_resource type="TileSet" id="TileSet_ay15r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ay15r"]
+size = Vector2(112.5, 89.5)
 
 [node name="Badawcza" type="Node2D"]
 position = Vector2(-5412, 10238)
@@ -34,3 +41,52 @@ position = Vector2(273, -2)
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ay15r")
 format = 2
+
+[node name="room1" type="Area2D" parent="."]
+position = Vector2(-4326, -2237)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room1" groups=["Portals"]]
+position = Vector2(24.4316, 8.7793)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room2" type="Area2D" parent="."]
+position = Vector2(-3073, -1118)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room2" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room3" type="Area2D" parent="."]
+position = Vector2(90, -2650)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room3" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room4" type="Area2D" parent="."]
+position = Vector2(-2897, -3991)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room4" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room5" type="Area2D" parent="."]
+position = Vector2(-914, -5057)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room5" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room6" type="Area2D" parent="."]
+position = Vector2(1632, -3936)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room6" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")
+
+[node name="room7" type="Area2D" parent="."]
+position = Vector2(2948, -3246)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="room7" groups=["Portals"]]
+position = Vector2(4, -3)
+shape = SubResource("RectangleShape2D_ay15r")

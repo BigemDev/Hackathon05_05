@@ -1,7 +1,13 @@
 res://dungeon.tscn
 res://tileset/tileset.tres
 res://player/goblin.gd
+<<<<<<< HEAD
 res://player/goblin.tscn
 res://tileset/tileset_edit.tscn
 res://enemy.tscn
 res://badawcza.tscn
+=======
+res://badawcza.tscn
+res://enemy.tscn
+res://player/goblin.tscn
+>>>>>>> origin/portale-demo
