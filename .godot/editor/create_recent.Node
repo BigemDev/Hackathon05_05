@@ -1,11 +1,14 @@
-Sprite2D
-PopupPanel
+Label
 Button
+VBoxContainer
+LineEdit
+TileMap
+PopupPanel
+Sprite2D
 CollisionPolygon2D
 CollisionShape2D
 Control
 Popup
 Area2D
-TileMap
 Node
 TileMapLayer
