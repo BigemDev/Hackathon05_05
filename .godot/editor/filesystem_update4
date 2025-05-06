@@ -1,5 +1,12 @@
+res://biblia_przycisk.gd
+res://blacha_przycisk.gd
+res://button.gd
+res://cyferki_przycisk.gd
+res://sprite_2d.gd
+res://tileset/tileset.tres
+res://badawcza.tscn
+res://player/goblin.tscn
 res://tileset/tileset_edit.tscn
 res://enemy.tscn
 res://dungeon.tscn
-res://tileset/tileset.tres
-res://player/goblin.gd
+res://enemy_test.tscn

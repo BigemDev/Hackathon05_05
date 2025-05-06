@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvkt5loxptuyq"
-path="res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"
+uid="uid://dn7fc6fvy4exn"
+path="res://.godot/imported/ARK.png-1f0d08a7872b191b2f600f0b555211ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tileset/isotiles.png"
-dest_files=["res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"]
+source_file="res://tileset/ARK.png"
+dest_files=["res://.godot/imported/ARK.png-1f0d08a7872b191b2f600f0b555211ad.ctex"]
 
 [params]
 

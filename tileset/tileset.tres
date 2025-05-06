@@ -1,10 +1,12 @@
 [gd_resource type="TileSet" load_steps=9 format=3 uid="uid://ceswxvl27cesm"]
 
-[ext_resource type="Texture2D" uid="uid://dup8jrb6ajapx" path="res://tileset/isotiles.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://chxu7ynvov7yj" path="res://tileset/szafka.png" id="1_3ysh4"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ti2j"]
+load_path = "res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s3w07"]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 margins = Vector2i(28, 75)
 texture_region_size = Vector2i(135, 105)
 0:0/next_alternative_id = 8
@@ -28,9 +30,40 @@ texture_region_size = Vector2i(135, 105)
 0:0/7/flip_h = true
 0:0/7/flip_v = true
 0:0/7/transpose = true
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fa1vh"]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 margins = Vector2i(221, 75)
 texture_region_size = Vector2i(135, 105)
 0:0/next_alternative_id = 8
@@ -56,7 +89,7 @@ texture_region_size = Vector2i(135, 105)
 0:0/7/transpose = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpb3e"]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 margins = Vector2i(28, 220)
 texture_region_size = Vector2i(140, 140)
 0:0/next_alternative_id = 8
@@ -90,7 +123,7 @@ texture_region_size = Vector2i(140, 140)
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(2, 2, -62, -30, 2.00001, -62, 66, -30)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aki5c"]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 margins = Vector2i(259, 241)
 texture_region_size = Vector2i(55, 95)
 0:0/next_alternative_id = 8
@@ -124,7 +157,7 @@ texture_region_size = Vector2i(55, 95)
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(22.5, -19.5, 10.5, -11.5, -13.5, -11.5, -25.5, -19.5, -25.5, -35.5, -13.5, -43.5, 6.5, -43.5, 22.5, -35.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ec70s"]
-texture = ExtResource("1")
+texture = SubResource("CompressedTexture2D_5ti2j")
 margins = Vector2i(54, 426)
 texture_region_size = Vector2i(85, 110)
 0:0/next_alternative_id = 8
@@ -156,6 +189,7 @@ texture_region_size = Vector2i(85, 110)
 0:0/7/flip_v = true
 0:0/7/transpose = true
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(40.5, -31, -39.5, 9, -39.5, -15, 40.5, -55)
+4:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qsv6y"]
 texture = ExtResource("1_3ysh4")
@@ -167,12 +201,19 @@ use_texture_padding = false
 1:3/0 = 0
 1:0/size_in_atlas = Vector2i(2, 3)
 1:0/0 = 0
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
 
 [resource]
+resource_local_to_scene = true
 tile_shape = 1
 tile_layout = 5
 tile_size = Vector2i(128, 64)
 physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_s3w07")
 sources/1 = SubResource("TileSetAtlasSource_fa1vh")
 sources/2 = SubResource("TileSetAtlasSource_xpb3e")
