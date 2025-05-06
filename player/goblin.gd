@@ -42,9 +42,9 @@ func _ready():
 			room_positions[str(aRooms[i]).split(":")[0]] = aRooms[i+1]
 			room_positions[str(aRooms[i+1]).split(":")[0]] = aRooms[i]
 
-	for name in room_positions:
+	#for name in room_positions:
 		#print(name, ":", room_positions[name])
-		print(name)
+		#print(name)
 	#print(room_positions["room14"])
 
 func _physics_process(_delta):
@@ -82,10 +82,11 @@ func _on_portalbody_area_entered(area: Area2D) -> void:
 	if not portalRecovery:
 		print("Portal entered")
 		#print(area.name)
-		position = room_positions[str(area.name)].global_position
+		#position = room_positions[str(area.name)].global_position
 		#position = room_positions["room2"].global_position
 
 func _on_portalbody_area_exited(area: Area2D) -> void:
 	portalRecovery = true
-	print("Portal exited")
+	print(area.name)
+	#print("Portal exited")
 	portalRecovery = false
