@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://con0ttnxk110b"]
+[gd_scene load_steps=27 format=3 uid="uid://con0ttnxk110b"]
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://chxu7ynvov7yj" path="res://tileset/szafka.png" id="2_85cul"]
@@ -15,8 +15,9 @@
 [ext_resource type="Script" path="res://komputer_kontrolny_przycisk.gd" id="11_0luh7"]
 [ext_resource type="Script" path="res://zatwierdz_haslo.gd" id="12_k67ek"]
 [ext_resource type="Texture2D" uid="uid://dn7fc6fvy4exn" path="res://tileset/ARK.png" id="16_ynsks"]
-[ext_resource type="Texture2D" uid="uid://d3ok7hfmr3blp" path="res://you_won_screen.png" id="17_85cul"]
+[ext_resource type="Texture2D" uid="uid://beia5ijhre8ag" path="res://gameover screen.png" id="17_85cul"]
 [ext_resource type="Script" uid="uid://b3g1728djeslc" path="res://ucieczka.gd" id="17_pedrn"]
+[ext_resource type="Texture2D" uid="uid://d3ok7hfmr3blp" path="res://you_won_screen.png" id="18_77ujo"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_orq0m"]
 vertices = PackedVector2Array(8488.31, 751.711, -4727.68, 7812.96, -14191.9, -281.523, -3968.89, -6352.42)
@@ -922,5 +923,11 @@ visible = false
 position = Vector2(163, -11.5003)
 scale = Vector2(1.125, 0.649414)
 texture = ExtResource("17_85cul")
+
+[node name="YouWonScreen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(584, 324)
+scale = Vector2(1.125, 0.636719)
+texture = ExtResource("18_77ujo")
 
 [connection signal="timeout" from="Timer" to="Walls3/Goblin" method="_on_timer_timeout"]
