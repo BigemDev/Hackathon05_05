@@ -1,12 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746501969
+::res://::1746503034
 badawcza.tscn::PackedScene::-1::1746501911::0::1::::<><><>0<>0<><>::
-dungeon.tscn::PackedScene::-1::1746501911::0::1::::<><><>0<>0<><>::
-enemy.gd::GDScript::6030673219547666856::1746487496::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy.tscn::PackedScene::3636006168086674708::1746500942::0::1::::<><><>0<>0<><>::res://enemy.gd<>uid://dpwpop61vufvt::::res://player/goblin.png
+dungeon.tscn::PackedScene::5783874963110328267::1746502777::0::1::::<><><>0<>0<><>::uid://ceswxvl27cesm::::res://tileset/tileset.tres<>uid://bqpkxht3mx8l8::::res://player/goblin.tscn<>uid://br2kqw4fm086k::::res://enemy.tscn<>uid://beia5ijhre8ag::::res://gameover screen.png
+enemy.gd::GDScript::6030673219547666856::1746502044::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy.tscn::PackedScene::3636006168086674708::1746502777::0::1::::<><><>0<>0<><>::uid://cr6kkox10fpum::::res://enemy.gd<>uid://dpwpop61vufvt::::res://player/goblin.png
+explo115bpm.wav::AudioStreamWAV::5884978467828660826::1746503033::1746503034::1::::<><><>0<>0<>1a3db3976bb08386243c561d57b8f134<>res://.godot/imported/explo115bpm.wav-531a64aa99b8f8eda5cb5f01f3fda8aa.sample::
 gameover screen.png::CompressedTexture2D/CompressedTexture2D::2683745088525857626::1746487496::1746487618::1::::<><><>0<>0<>0889199f2e150fb2141db24323f3a3f7<>res://.godot/imported/gameover screen.png-d88a2f4421f891e2bdbdbb6439123c8b.ctex::
 icon.webp::CompressedTexture2D/CompressedTexture2D::8738855909306577333::1746467099::1746467163::1::::<><><>0<>0<>41844cc004e3b600aef911b2bf9967e7<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
 README.md::TextFile::-1::1746467099::0::1::::<><><>0<>0<><>::
+run187bpm.wav::AudioStreamWAV::8018238673730964996::1746503033::1746503034::1::::<><><>0<>0<>ff232649c44ca0fa5fcaae02c86b21e6<>res://.godot/imported/run187bpm.wav-3190eedd82eaaee7cfa769893d577121.sample::
+stress100bpm.wav::AudioStreamWAV::4480735221901734859::1746503034::1746503034::1::::<><><>0<>0<>5b7129b77b1bc391e0d79cc497d854a3<>res://.godot/imported/stress100bpm.wav-0745d91a9426ef11939736763bc3d9a4.sample::
 ::res://Angle/::1746487621
 arrowWall_E.png::CompressedTexture2D/CompressedTexture2D::661608935080598920::1746487560::1746487617::1::::<><><>0<>0<>2113518039e63efe69b4a85d4401606f<>res://.godot/imported/arrowWall_E.png-80f781cb0cdcfa6fb2fbef9dd428a34f.ctex::
 arrowWall_N.png::CompressedTexture2D/CompressedTexture2D::7532564562334614457::1746487560::1746487617::1::::<><><>0<>0<>d0e29f2a2438494bd57fe0894d968eb9<>res://.godot/imported/arrowWall_N.png-a26077a64caefb5ca2bb2427a93fc56b.ctex::
@@ -931,14 +934,14 @@ window_N.png::CompressedTexture2D/CompressedTexture2D::6302323708346662431::1746
 window_S.png::CompressedTexture2D/CompressedTexture2D::8909249653992314170::1746487562::1746487612::1::::<><><>0<>0<>2dd65f7de09da8945f3861357451cd26<>res://.godot/imported/window_S.png-9f5994dc39f467990638b14a47ad664a.ctex::
 window_W.png::CompressedTexture2D/CompressedTexture2D::4273814041440796277::1746487562::1746487612::1::::<><><>0<>0<>6362eb148ed224280be68896ae437764<>res://.godot/imported/window_W.png-5962ebe0e80ef6083f4f52a520d9db54.ctex::
 ::res://kenney_isometric-miniature-prototype/Samples/::1746487562
-::res://player/::1746501911
-goblin.gd::GDScript::1139655317782780585::1746501911::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://player/::1746502777
+goblin.gd::GDScript::1139655317782780585::1746502738::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 goblin.png::CompressedTexture2D/CompressedTexture2D::8258447609194635233::1746467099::1746467165::1::::<><><>0<>0<>1093559bff52f3d4d74545194805a5d7<>res://.godot/imported/goblin.png-32452b37152c86975cc3bde34afb02b5.ctex::
-goblin.tscn::PackedScene::3541056489703898451::1746501911::0::1::::<><><>0<>0<><>::uid://dpwpop61vufvt::::res://player/goblin.png<>uid://qib7r2l3ev0d::::res://player/goblin.gd<>uid://b5qra1qmknb8a::::res://player/hitbody.gd<>uid://cusa1whh2cbg3::::res://player/portalbody.gd
+goblin.tscn::PackedScene::3541056489703898451::1746502777::0::1::::<><><>0<>0<><>::uid://dpwpop61vufvt::::res://player/goblin.png<>uid://qib7r2l3ev0d::::res://player/goblin.gd<>uid://b5qra1qmknb8a::::res://player/hitbody.gd<>uid://cusa1whh2cbg3::::res://player/portalbody.gd
 hitbody.gd::GDScript::4526149616659134958::1746500943::0::1::::<>Area2D<><>0<>0<><>::
 portalbody.gd::GDScript::6213824637042996172::1746501911::0::1::::<>Area2D<><>0<>0<><>::
-::res://tileset/::1746494119
+::res://tileset/::1746502777
 isotiles.png::CompressedTexture2D/CompressedTexture2D::8596025218907894141::1746487496::1746487613::1::::<><><>0<>0<>3e19217c16befd682175431166da8a4f<>res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex::
 szafka.png::CompressedTexture2D/CompressedTexture2D::5312916728072666273::1746487562::1746487612::1::::<><><>0<>0<>220a5e6924c86fb8429c62be32ee766a<>res://.godot/imported/szafka.png-25e0402a8d101ff9c29f8a0afe4670de.ctex::
-tileset.tres::TileSet::5092133509864887088::1746493129::0::1::::<><><>0<>0<><>::uid://dup8jrb6ajapx::::res://tileset/isotiles.png
-tileset_edit.tscn::PackedScene::4440817790541544386::1746494119::0::1::::<><><>0<>0<><>::uid://dup8jrb6ajapx::::res://tileset/isotiles.png
+tileset.tres::TileSet::5092133509864887088::1746502252::0::1::::<><><>0<>0<><>::uid://dup8jrb6ajapx::::res://tileset/isotiles.png
+tileset_edit.tscn::PackedScene::4440817790541544386::1746502777::0::1::::<><><>0<>0<><>::uid://dup8jrb6ajapx::::res://tileset/isotiles.png
