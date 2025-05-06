@@ -3,10 +3,8 @@ class_name Player
 const MOTION_SPEED = 160 # Pixels/second.
 var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
-var gameOverScreen
-var gameOver
-var portalRecovery = false
 var room_positions = {}
+var portalRecovery = false
 
 var anim_directions = {
 	"idle": [ # list of [animation name, horizontal flip]
@@ -33,13 +31,14 @@ var anim_directions = {
 }
 
 func _ready():
-	gameOverScreen = get_tree().root.get_node("Dungeon/GameoverScreen")
 	var rooms_scene = get_parent().get_parent().get_node("Rooms")
+	
 
 	var aRooms = rooms_scene.get_children()
 	aRooms.shuffle()
 	for i in range(0, aRooms.size(), 2):
-
+			#room_positions[room.name] = room.position
+			
 			room_positions[str(aRooms[i]).split(":")[0]] = aRooms[i+1]
 			room_positions[str(aRooms[i+1]).split(":")[0]] = aRooms[i]
 
@@ -51,7 +50,6 @@ func _ready():
 func _physics_process(_delta):
 	#update player location
 	PLAYER_LOCATION = Vector2(global_position)
-	gameOverScreen.position = global_position
 	#print(PLAYER_LOCATION)
 	var motion = Vector2()
 	motion.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
@@ -77,11 +75,9 @@ func update_animation(anim_set):
 	$Sprite2D.play(anim_directions[anim_set][slice_dir][0])
 	$Sprite2D.flip_h = anim_directions[anim_set][slice_dir][1]
 
-func lose_game():
-	gameOverScreen.show()
-	get_tree().paused = 1
+static func lose_game():
 	print("PORAŻKA")
-	
+
 func _on_portalbody_area_entered(area: Area2D) -> void:
 	if not portalRecovery:
 		print("Portal entered")

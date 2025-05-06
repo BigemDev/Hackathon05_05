@@ -1,7 +1,5 @@
 res://tileset/tileset_edit.tscn
-res://player/goblin.tscn
 res://enemy.tscn
-res://enemy.gd
-res://player/goblin.gd
 res://dungeon.tscn
 res://tileset/tileset.tres
+res://player/goblin.gd

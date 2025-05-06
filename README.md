@@ -1,30 +1,19 @@
-# Isometric Game
+### Status: Cooking
+### Repo opened: 5/5/2025
 
-This demo shows a traditional isometric view with depth sorting.
+### Importante
 
-A character can move around the level and will also slide around objects,
-as well as be occluded when standing in front or behind them.
+### Info
+  HIOB (working title) prototype created during Cognitive Science Hackaton on 05.05/06.05 Current version is still a work in progress. <br/>
 
-Language: GDScript
-
-Renderer: Compatibility
-
-Check out this demo on the asset library: https://godotengine.org/asset-library/asset/112
-
-## How does it work?
-
-The level uses a [`TileMap`](https://docs.godotengine.org/en/latest/classes/class_tilemap.html#class-tilemap)
-in which the tiles have different vertical offsets.
-The walls, doors, and pillars each have
-[`StaticBody2D`](https://docs.godotengine.org/en/latest/classes/class_staticbody2d.html)
-and [`CollisionPolygon2D`](https://docs.godotengine.org/en/latest/classes/class_collisionpolygon2d.html)
-at their base. The player also has a collider at its base,
-which makes the player collide with the level.
-
-2D lighting effects are achieved using a mixture of PointLight2D nodes (which provide real-time shadows)
-and pre-placed Polygon2Ds with sprites. To provide additional ambient shading, the goblin also has a blob
-shadow below its feet (a Sprite2D with a texture).
-
-## Screenshots
-
-![Screenshot](screenshots/isometric.webp)
+### Quick Rundown
+1. sddsf
+2. rfdsk
+  
+### Todo
+- [] teleportation fixes - in progress
+- [] loading time of the map --> to check if particular combination of the labirynth occurs, which excludes a part of the map and prevent this possibility
+- [] mini-map
+- [] AI enemies responding to player's actions on the course of a single run
+- [] flashlight mechanic
+- [] hiding mechanic

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://con0ttnxk110b"]
+[gd_scene load_steps=9 format=3 uid="uid://con0ttnxk110b"]
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1"]
 [ext_resource type="PackedScene" uid="uid://bqpkxht3mx8l8" path="res://player/goblin.tscn" id="3"]
@@ -14,6 +14,9 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(192, -98, 357, -13, 49,
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orq0m"]
 size = Vector2(112.25, 37.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_my81p"]
+size = Vector2(1883.44, 173.484)
 
 [node name="Dungeon" type="Node2D"]
 
@@ -44,9 +47,6 @@ layer_0/y_sort_enabled = true
 layer_0/y_sort_origin = 32
 layer_0/tile_data = PackedInt32Array(-917493, 2, 0, -917492, 2, 0, -917491, 2, 0, -917490, 2, 0, -917489, 2, 0, -851957, 2, 0, -851956, 3, 0, -851953, 2, 0, -786421, 2, 0, -786420, 3, 0, -786417, 2, 0, -720885, 2, 0, -720881, 2, 0, -655349, 2, 0, -655348, 2, 0, -655345, 2, 0, -589813, 2, 0, -589809, 2, 0, -524277, 2, 0, -524273, 2, 0, -458747, 2, 0, -458746, 2, 0, -458745, 2, 0, -458744, 4, 65536, -458743, 4, 65536, -458742, 2, 0, -458741, 2, 0, -458737, 2, 0, -393211, 2, 0, -393209, 3, 0, -393206, 3, 0, -393201, 2, 0, -393200, 2, 65536, -393199, 2, 65536, -327675, 4, 0, -327663, 2, 65536, -196609, 2, 0, -262144, 2, 0, -262143, 2, 0, -262142, 2, 0, -262141, 2, 0, -262139, 4, 0, -262127, 2, 65536, -131073, 2, 0, -196605, 2, 0, -196603, 2, 0, -196591, 2, 65536, -65537, 2, 0, -131072, 3, 0, -131069, 2, 0, -131067, 2, 0, -131066, 3, 0, -131063, 3, 0, -131062, 2, 0, -131055, 2, 65536, -1, 2, 0, -65533, 2, 0, -65532, 2, 0, -65531, 2, 0, -65530, 2, 0, -65527, 2, 0, -65526, 2, 0, -65525, 3, 0, -65522, 3, 0, -65520, 3, 0, -65519, 2, 65536, 65535, 2, 0, 10, 2, 0, 16, 3, 0, 17, 2, 65536, 131071, 2, 0, 65546, 2, 0, 65547, 3, 0, 65550, 3, 0, 65552, 3, 0, 65553, 2, 65536, 196607, 2, 0, 131072, 3, 0, 131081, 3, 0, 131082, 2, 0, 131089, 2, 65536, 262143, 2, 0, 196618, 2, 0, 196625, 2, 65536, 327679, 2, 0, 262144, 2, 0, 262145, 2, 0, 262146, 2, 0, 262147, 4, 65536, 262148, 4, 65536, 262149, 2, 0, 262150, 2, 0, 262151, 2, 0, 262152, 2, 0, 262153, 2, 0, 262154, 2, 0, 262155, 2, 65536, 262156, 2, 65536, 262159, 2, 65536, 262160, 2, 65536, 262161, 2, 65536, 327690, 2, 65536, 327691, 2, 65536, 327692, 2, 65536, 327695, 2, 65536, 327696, 2, 65536, 327697, 2, 65536, 327698, 2, 65536, 393226, 2, 65536, 393232, 3, 0, 393234, 2, 65536, 458762, 2, 65536, 458767, 3, 0, 458770, 2, 65536, 524298, 2, 65536, 524306, 2, 65536, 589834, 2, 65536, 589842, 2, 65536, 655370, 2, 65536, 655371, 3, 0, 655375, 3, 0, 655376, 3, 0, 655378, 2, 65536, 720906, 2, 65536, 720912, 3, 0, 720914, 2, 65536, 786442, 2, 65536, 786443, 2, 65536, 786444, 2, 65536, 786445, 2, 65536, 786446, 2, 65536, 786447, 2, 65536, 786448, 2, 65536, 786449, 2, 65536, 786450, 2, 65536, 393233, 3, 0, 65539, 2, 0, 131078, 2, 0, 196614, 2, 0, 3, 2, 0)
 
-[node name="Goblin" parent="Walls" instance=ExtResource("3")]
-position = Vector2(225, 26)
-
 [node name="Node2D" type="Node2D" parent="Walls"]
 
 [node name="Enemy" parent="Walls" instance=ExtResource("3_noicg")]
@@ -55,6 +55,9 @@ position = Vector2(58, 172)
 [node name="Enemy2" parent="Walls" instance=ExtResource("3_noicg")]
 position = Vector2(1022, 276)
 
+[node name="Goblin" parent="Walls" instance=ExtResource("3")]
+position = Vector2(9503, -3116)
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 show_behind_parent = true
 light_mask = 0
@@ -62,6 +65,7 @@ color = Color(0.466667, 0.635294, 0.92549, 1)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 modulate = Color(0.910621, 0.48145, 0.642578, 1)
+position = Vector2(221, -79)
 navigation_polygon = SubResource("NavigationPolygon_noicg")
 
 [node name="Walls2" type="TileMap" parent="."]
@@ -83,7 +87,9 @@ format = 2
 [node name="Rooms" type="Node" parent="."]
 
 [node name="room1" type="Area2D" parent="Rooms"]
-position = Vector2(-773, -2458)
+position = Vector2(-820, -2495)
+rotation = -0.484557
+scale = Vector2(1, 2.53875)
 collision_layer = 8
 collision_mask = 0
 
@@ -91,8 +97,18 @@ collision_mask = 0
 position = Vector2(24.4316, 8.7793)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room1"]
+position = Vector2(45.6349, 41.9576)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room1/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room2" type="Area2D" parent="Rooms"]
-position = Vector2(480, -1339)
+position = Vector2(482, -1293)
+rotation = -0.0304247
+scale = Vector2(1, 1.84332)
 collision_layer = 8
 collision_mask = 0
 
@@ -101,8 +117,19 @@ position = Vector2(50.875, -33.125)
 rotation = 0.395736
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room2"]
+position = Vector2(-9.42601, 25.3536)
+rotation = -2.76277
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room2/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room3" type="Area2D" parent="Rooms"]
-position = Vector2(3643, -2871)
+position = Vector2(3614, -2802)
+rotation = 0.509592
+scale = Vector2(-1.37257, 2.06137)
 collision_layer = 8
 collision_mask = 0
 
@@ -110,8 +137,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room3"]
+position = Vector2(14.8941, -74.2381)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room3/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room4" type="Area2D" parent="Rooms"]
-position = Vector2(656, -4212)
+position = Vector2(680, -4113)
+rotation = -0.473753
+scale = Vector2(1.64082, 2.76787)
 collision_layer = 8
 collision_mask = 0
 
@@ -119,8 +156,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room4"]
+position = Vector2(14.8941, -74.2381)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room4/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room5" type="Area2D" parent="Rooms"]
-position = Vector2(2639, -5278)
+position = Vector2(2691, -5341)
+rotation = 0.551469
+scale = Vector2(1.44907, 3.75825)
 collision_layer = 8
 collision_mask = 0
 
@@ -128,8 +175,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room5"]
+position = Vector2(-12.4929, 30.7658)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room5/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room6" type="Area2D" parent="Rooms"]
-position = Vector2(5185, -4157)
+position = Vector2(5221, -4112)
+rotation = -0.541578
+scale = Vector2(1, 2.79709)
 collision_layer = 8
 collision_mask = 0
 
@@ -137,8 +194,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room6"]
+position = Vector2(20.474, -73.1996)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room6/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room7" type="Area2D" parent="Rooms"]
-position = Vector2(6536, -3493)
+position = Vector2(6594, -3465)
+rotation = -0.531721
+scale = Vector2(1.20687, 2.92465)
 collision_layer = 8
 collision_mask = 0
 
@@ -146,8 +213,18 @@ collision_mask = 0
 position = Vector2(-39, -45)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room7"]
+position = Vector2(-15.7545, -12.5513)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room7/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room8" type="Area2D" parent="Rooms"]
-position = Vector2(6486, -2012)
+position = Vector2(6447, -1974)
+rotation = 0.493941
+scale = Vector2(1.82695, 2.6848)
 collision_layer = 8
 collision_mask = 0
 
@@ -155,8 +232,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room8"]
+position = Vector2(21.7239, -73.107)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room8/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room9" type="Area2D" parent="Rooms"]
-position = Vector2(6337, -1736)
+position = Vector2(6312, -1766)
+rotation = -0.480396
+scale = Vector2(1, 2.36444)
 collision_layer = 8
 collision_mask = 0
 
@@ -164,8 +251,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room9"]
+position = Vector2(18.309, 27.74)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room9/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room10" type="Area2D" parent="Rooms"]
-position = Vector2(5548, -1375)
+position = Vector2(5537, -1387)
+rotation = -0.514291
+scale = Vector2(1, 2.80764)
 collision_layer = 8
 collision_mask = 0
 
@@ -173,8 +270,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room10"]
+position = Vector2(18.309, 27.74)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room10/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room11" type="Area2D" parent="Rooms"]
-position = Vector2(4873, -1180)
+position = Vector2(4893, -1210)
+rotation = 0.498918
+scale = Vector2(1.46289, 2.67605)
 collision_layer = 8
 collision_mask = 0
 
@@ -182,8 +289,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room11"]
+position = Vector2(18.309, 27.74)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room11/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room12" type="Area2D" parent="Rooms"]
-position = Vector2(5198, -1541)
+position = Vector2(5225, -1488)
+rotation = -0.452332
+scale = Vector2(1, 2.31901)
 collision_layer = 8
 collision_mask = 0
 
@@ -191,8 +308,18 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room12"]
+position = Vector2(6.12136, -73.509)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room12/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room13" type="Area2D" parent="Rooms" groups=["Portals"]]
-position = Vector2(5969, -1920)
+position = Vector2(5989, -1871)
+rotation = -0.531029
+scale = Vector2(1.02159, -2.9676)
 collision_layer = 8
 collision_mask = 0
 
@@ -200,14 +327,69 @@ collision_mask = 0
 position = Vector2(4, -3)
 shape = SubResource("RectangleShape2D_orq0m")
 
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room13"]
+position = Vector2(1.63435, 26.2432)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room13/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
 [node name="room14" type="Area2D" parent="Rooms"]
-position = Vector2(5, 61)
+position = Vector2(6631, -283)
+rotation = 0.534127
+scale = Vector2(-1.05692, 2.62168)
 collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/room14" groups=["Portals"]]
 position = Vector2(-4, -30)
 shape = SubResource("RectangleShape2D_orq0m")
+
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room14"]
+position = Vector2(8.29212, 1.09101)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room14/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
+[node name="room15" type="Area2D" parent="Rooms"]
+position = Vector2(9166, -2964)
+rotation = 0.447218
+scale = Vector2(1, 2.72936)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/room15" groups=["Portals"]]
+position = Vector2(-4, -30)
+shape = SubResource("RectangleShape2D_orq0m")
+
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room15"]
+collision_mask = 5
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room15/InvisibleWall"]
+position = Vector2(13.0669, 76.7419)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
+
+[node name="room16" type="Area2D" parent="Rooms"]
+position = Vector2(7305, -457)
+rotation = -0.56668
+scale = Vector2(1, 2.72936)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rooms/room16" groups=["Portals"]]
+position = Vector2(-4, -30)
+shape = SubResource("RectangleShape2D_orq0m")
+
+[node name="InvisibleWall" type="Area2D" parent="Rooms/room16"]
+
+[node name="Hitbox" type="CollisionShape2D" parent="Rooms/room16/InvisibleWall"]
+position = Vector2(-12.3652, 19.6458)
+shape = SubResource("RectangleShape2D_my81p")
+debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
 
 [node name="GameoverScreen" type="Sprite2D" parent="."]
 visible = false
