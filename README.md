@@ -3,7 +3,7 @@
 ### Upt. 6/5/2025
 
 ### Importante
-Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of the game is predicted to be around 1h - 1.5h. The most enticing part is a future use of a learning algorythm for Enemy(ies), which is not yet implemented as of time of writing this update, but should be considered a priority after fixing current bugs. 
+Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of the game is predicted to take around 1h - 1.5h to complete a full run. The most enticing part is a future use of a learning algorythm for Enemy(ies), which is not yet implemented as of time of writing this update, but should be considered a priority after fixing current bugs. 
 
 ### Info
   HIOB (working title)—prototype of a game created for Cognitive Science Hackaton on 05.05/06.05 Current version is still a work in progress. <br/>
