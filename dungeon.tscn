@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://bqpkxht3mx8l8" path="res://player/goblin.tscn" id="3"]
 [ext_resource type="Script" uid="uid://camk7386o85wr" path="res://button.gd" id="3_77ujo"]
 [ext_resource type="PackedScene" uid="uid://br2kqw4fm086k" path="res://enemy.tscn" id="3_noicg"]
-[ext_resource type="Texture2D" uid="uid://beia5ijhre8ag" path="res://gameover screen.png" id="4_orq0m"]
 [ext_resource type="Script" uid="uid://c6j2uxocrx0k1" path="res://blacha_przycisk.gd" id="4_v3ata"]
 [ext_resource type="Script" uid="uid://b6xm6cvdo04bl" path="res://biblia_przycisk.gd" id="5_uj8uw"]
 [ext_resource type="Texture2D" uid="uid://b7sib5rxxwa01" path="res://biblia.webp" id="6_k21r5"]
@@ -16,6 +15,7 @@
 [ext_resource type="Script" path="res://komputer_kontrolny_przycisk.gd" id="11_0luh7"]
 [ext_resource type="Script" path="res://zatwierdz_haslo.gd" id="12_k67ek"]
 [ext_resource type="Texture2D" uid="uid://dn7fc6fvy4exn" path="res://tileset/ARK.png" id="16_ynsks"]
+[ext_resource type="Texture2D" uid="uid://d3ok7hfmr3blp" path="res://you_won_screen.png" id="17_85cul"]
 [ext_resource type="Script" uid="uid://b3g1728djeslc" path="res://ucieczka.gd" id="17_pedrn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_orq0m"]
@@ -921,6 +921,6 @@ debug_color = Color(0.23437, 0.637366, 1.34766e-06, 0.42)
 visible = false
 position = Vector2(163, -11.5003)
 scale = Vector2(1.125, 0.649414)
-texture = ExtResource("4_orq0m")
+texture = ExtResource("17_85cul")
 
 [connection signal="timeout" from="Timer" to="Walls3/Goblin" method="_on_timer_timeout"]

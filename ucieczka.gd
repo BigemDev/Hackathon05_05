@@ -6,6 +6,7 @@ extends Button
 @onready var _kawa = $"../../../Timer/TileMap/Control/ekspres_przycisk"
 @onready var _cyfry = $"../../../Timer/TileMap/Control/cyferki_przycisk"
 @onready var info = $"../PopupPanel/info"
+var youWinScreen
 
 func _ready():
 	pressed.connect(_button_pressed)
@@ -13,6 +14,7 @@ func _ready():
 	print("_haslo: ", _haslo)
 	print("_kawa: ", _kawa)
 	print("_cyfry: ", _cyfry)
+	youWinScreen = $"../../../YouWonScreen"
 
 	
 func _button_pressed():
@@ -23,6 +25,8 @@ func _button_pressed():
 		var timer = get_tree().create_timer(2)
 		await timer.timeout
 		get_tree().quit()
+		#youWinScreen.show()
+		
 		
 	elif _blacha.czy_zdobyta && _haslo.czy_poprawne && _kawa.czy_zrobiona && !_cyfry.czy_przepisane: #1110
 		info.text = "Hiob odmawia wejścia na pokład przed przepisaniem danych na odpowiedni komputer."
