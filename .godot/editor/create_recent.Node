@@ -1,8 +1,8 @@
-Area2D
-TileMap
-Node
-TileMapLayer
 CollisionShape2D
+Area2D
+Node
+TileMap
+TileMapLayer
 Node2D
 NavigationObstacle2D
 NavigationRegion2D

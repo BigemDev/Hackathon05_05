@@ -1,4 +1,6 @@
 res://dungeon.tscn
 res://tileset/tileset.tres
-res://badawcza.tscn
 res://player/goblin.gd
+res://badawcza.tscn
+res://enemy.tscn
+res://player/goblin.tscn
