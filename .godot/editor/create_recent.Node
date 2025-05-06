@@ -1,11 +1,11 @@
 Sprite2D
 PopupPanel
 Button
+CollisionPolygon2D
+CollisionShape2D
 Control
 Popup
-CollisionPolygon2D
 Area2D
-CollisionShape2D
 TileMap
 Node
 TileMapLayer
