@@ -19,8 +19,6 @@ Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of t
 7. Sprites of Hiob, the hivemind drones, and the main enemy; also three OST tracks are created by dev team.
 8. Use of ChatGPT / help to code implementation.
 
-
-
   
 ### Todo
 - [] teleportation fixes 
@@ -29,3 +27,4 @@ Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of t
 - [] AI enemies responding to player's actions on the course of a single run
 - [] flashlight mechanic
 - [] hiding mechanic
+- [] in a full version there should be more audio diversity, right now there is an issue with looping audio files in godot (06.05.2025)
