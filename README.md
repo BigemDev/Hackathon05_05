@@ -7,6 +7,7 @@ Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of t
 
 ### Info
   HIOB (working title)—prototype of a game created for Cognitive Science Hackaton on 05.05/06.05 Current version is still a work in progress. <br/>
+  Uses an isometric/2.5D godot map asset, heavily modified.
 
 ### Quick Rundown
 1. Creates a procedurally generated map of locations.
@@ -22,8 +23,8 @@ Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of t
 
   
 ### Todo
-- [] teleportation fixes - in progress
-- [] loading time of the map --> to check if particular combination of the labirynth occurs, which excludes a part of the map and prevent this possibility
+- [] teleportation fixes 
+- [] loading time of the map --> to check if particular combination of the labirynth occurs, which excludes a part of the map, to prevent this possibility
 - [] mini-map
 - [] AI enemies responding to player's actions on the course of a single run
 - [] flashlight mechanic
