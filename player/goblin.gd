@@ -1,6 +1,6 @@
 extends CharacterBody2D
 class_name Player
-const MOTION_SPEED = 160 # Pixels/second.
+const MOTION_SPEED = 600
 var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
 var room_positions = {}
@@ -90,7 +90,7 @@ func _on_portalbody_area_entered(area: Area2D) -> void:
 	if not portalRecovery:
 		print("Portal entered")
 		portalRecovery = true
-		position = room_positions[str(area.name)].global_position
+		global_position = room_positions[str(area.name)].global_position
 
 
 func _on_portalbody_area_exited(area: Area2D) -> void:
@@ -104,6 +104,6 @@ func _on_portalbody_area_exited(area: Area2D) -> void:
 	await timer.timeout
 
 
-func _on_Timer_timeout():
+func _on_timer_timeout() -> void:
 	print("refresh teleport cooldown")
 	portalRecovery = false

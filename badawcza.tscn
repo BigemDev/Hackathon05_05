@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://c6j2uxocrx0k1" path="res://blacha_przycisk.gd" id="7_owi72"]
 [ext_resource type="Texture2D" uid="uid://b7sib5rxxwa01" path="res://biblia.webp" id="9_pv4h4"]
 [ext_resource type="Script" uid="uid://b6xm6cvdo04bl" path="res://biblia_przycisk.gd" id="9_s237v"]
-[ext_resource type="Script" uid="uid://cedbpdc05w280" path="res://cyferki_przycisk.gd" id="11_cbvsj"]
+[ext_resource type="Script" path="res://cyferki_przycisk.gd" id="11_cbvsj"]
 [ext_resource type="Script" path="res://zatwierdz_przepisanie.gd" id="11_y7mt4"]
 [ext_resource type="Script" path="res://zatwierdz_haslo.gd" id="12_5vdex"]
 [ext_resource type="Texture2D" uid="uid://jx1vpowdf0mc" path="res://cyferki.jpg" id="12_n3axn"]
