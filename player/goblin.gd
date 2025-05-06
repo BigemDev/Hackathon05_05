@@ -3,6 +3,12 @@ class_name Player
 const MOTION_SPEED = 160 # Pixels/second.
 var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
+var gameOverScreen
+var gameOver
+
+func _ready():
+	gameOverScreen = get_tree().root.get_node("Dungeon/GameoverScreen")
+	print(gameOverScreen.name)
 
 var anim_directions = {
 	"idle": [ # list of [animation name, horizontal flip]
@@ -32,6 +38,7 @@ var anim_directions = {
 func _physics_process(_delta):
 	#update player location
 	PLAYER_LOCATION = Vector2(global_position)
+	gameOverScreen.position = global_position
 	#print(PLAYER_LOCATION)
 	var motion = Vector2()
 	motion.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
@@ -58,5 +65,7 @@ func update_animation(anim_set):
 	$Sprite2D.play(anim_directions[anim_set][slice_dir][0])
 	$Sprite2D.flip_h = anim_directions[anim_set][slice_dir][1]
 
-static func lose_game():
+func lose_game():
+	gameOverScreen.show()
+	get_tree().paused = 1
 	print("PORAŻKA")
