@@ -5,6 +5,7 @@ var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
 var room_positions = {}
 var portalRecovery = false
+static var teleportationHistory
 
 var anim_directions = {
 	"idle": [ # list of [animation name, horizontal flip]
@@ -81,12 +82,21 @@ static func lose_game():
 func _on_portalbody_area_entered(area: Area2D) -> void:
 	if not portalRecovery:
 		print("Portal entered")
-		#print(area.name)
-		#position = room_positions[str(area.name)].global_position
-		#position = room_positions["room2"].global_position
+		portalRecovery = true
+		position = room_positions[str(area.name)].global_position
+
 
 func _on_portalbody_area_exited(area: Area2D) -> void:
-	portalRecovery = true
-	print(area.name)
-	#print("Portal exited")
+	print("Portal exit")
+	var teleportationPosition = room_positions[str(area.name)].global_position
+	print(teleportationPosition)
+	teleportationHistory = teleportationPosition
+	get_parent().get_node("Enemy").countDown()
+	var timer = get_tree().root.get_node("Dungeon/Timer")
+	timer.start() 
+	await timer.timeout
+
+
+func _on_Timer_timeout():
+	print("refresh teleport cooldown")
 	portalRecovery = false

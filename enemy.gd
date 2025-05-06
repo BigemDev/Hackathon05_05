@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var navigation: NavigationRegion2D
 
-const MOTION_SPEED = 50 # Pixels/second.
+const MOTION_SPEED = 159 # Pixels/second.
 
 var direction = Vector2.ZERO
 var last_direction = Vector2.RIGHT
@@ -72,3 +72,15 @@ func update_animation(anim_set):
 	var anim = anim_directions[anim_set][slice_dir]
 	$Sprite2D.play(anim[0])
 	$Sprite2D.flip_h = anim[1]
+
+func countDown():
+	print("Countdown started")
+	var timer = get_node("Timer")
+	var remaining_time = timer.time_left
+	timer.start(remaining_time + 5)
+
+
+func _on_timer_timeout() -> void:
+	print("teleport wroga")
+	print(Player.teleportationHistory)
+	global_position = Player.teleportationHistory
