@@ -60,3 +60,7 @@ func update_animation(anim_set):
 
 static func lose_game():
 	print("PORAŻKA")
+
+
+func _on_room_14_area_entered(area: Area2D) -> void:
+	PLAYER_LOCATION=Vector2(area.position.x, area.position.y);
