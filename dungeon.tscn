@@ -9,14 +9,14 @@
 [ext_resource type="Script" uid="uid://c6j2uxocrx0k1" path="res://blacha_przycisk.gd" id="4_v3ata"]
 [ext_resource type="Script" uid="uid://b6xm6cvdo04bl" path="res://biblia_przycisk.gd" id="5_uj8uw"]
 [ext_resource type="Texture2D" uid="uid://b7sib5rxxwa01" path="res://biblia.webp" id="6_k21r5"]
-[ext_resource type="Script" path="res://cyferki_przycisk.gd" id="7_5grt3"]
+[ext_resource type="Script" uid="uid://cedbpdc05w280" path="res://cyferki_przycisk.gd" id="7_5grt3"]
 [ext_resource type="Texture2D" uid="uid://jx1vpowdf0mc" path="res://cyferki.jpg" id="8_ou4rh"]
 [ext_resource type="Script" path="res://komputer_cyferki_przycisk.gd" id="9_tkvb4"]
 [ext_resource type="Script" path="res://zatwierdz_przepisanie.gd" id="10_ojnyd"]
 [ext_resource type="Script" path="res://komputer_kontrolny_przycisk.gd" id="11_0luh7"]
 [ext_resource type="Script" path="res://zatwierdz_haslo.gd" id="12_k67ek"]
 [ext_resource type="Texture2D" uid="uid://dn7fc6fvy4exn" path="res://tileset/ARK.png" id="16_ynsks"]
-[ext_resource type="Script" path="res://ucieczka.gd" id="17_pedrn"]
+[ext_resource type="Script" uid="uid://b3g1728djeslc" path="res://ucieczka.gd" id="17_pedrn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_orq0m"]
 vertices = PackedVector2Array(8488.31, 751.711, -4727.68, 7812.96, -14191.9, -281.523, -3968.89, -6352.42)
@@ -88,6 +88,7 @@ tile_set = SubResource("TileSet_noicg")
 format = 2
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
 one_shot = true
 
 [node name="TileMap" type="TileMap" parent="Timer"]

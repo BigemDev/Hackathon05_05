@@ -1,6 +1,6 @@
 extends CharacterBody2D
 class_name Player
-const MOTION_SPEED = 600
+const MOTION_SPEED = 160
 var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
 var room_positions = {}

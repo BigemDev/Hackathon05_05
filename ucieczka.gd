@@ -1,14 +1,19 @@
 extends Button
 
 @onready var popup = $"../PopupPanel"
-@onready var _blacha = $"../../../TileMap/Control/blacha_przycisk"
-@onready var _haslo = $"../../../TileMap/Control/komputer_kontrolny/VBoxContainer/zatwierdz_haslo"
-@onready var _kawa = $"../../../TileMap/Control/ekspres_przycisk"
-@onready var _cyfry = $"../../../TileMap/Control/komputer_cyferki_przycisk"
+@onready var _blacha = $"../../../Timer/TileMap/Control/blacha_przycisk"
+@onready var _haslo = $"../../../Timer/TileMap/Control/komputer_kontrolny/VBoxContainer/zatwierdz_haslo"
+@onready var _kawa = $"../../../Timer/TileMap/Control/ekspres_przycisk"
+@onready var _cyfry = $"../../../Timer/TileMap/Control/cyferki_przycisk"
 @onready var info = $"../PopupPanel/info"
 
 func _ready():
 	pressed.connect(_button_pressed)
+	print("_blacha: ", _blacha)
+	print("_haslo: ", _haslo)
+	print("_kawa: ", _kawa)
+	print("_cyfry: ", _cyfry)
+
 	
 func _button_pressed():
 	popup.popup()
