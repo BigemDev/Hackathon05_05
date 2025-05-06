@@ -1,3 +1,11 @@
+Sprite2D
+PopupPanel
+Button
+Control
+Popup
+CollisionPolygon2D
+Area2D
+CollisionShape2D
 TileMap
 Node
 TileMapLayer

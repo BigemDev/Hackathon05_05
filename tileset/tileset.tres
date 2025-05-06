@@ -1,4 +1,6 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://ceswxvl27cesm"]
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://ceswxvl27cesm"]
+
+[ext_resource type="Texture2D" uid="uid://chxu7ynvov7yj" path="res://tileset/szafka.png" id="1_3ysh4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ti2j"]
 load_path = "res://.godot/imported/isotiles.png-525cf6639aba62989bb423b9cdb9e1f3.ctex"
@@ -189,6 +191,15 @@ texture_region_size = Vector2i(85, 110)
 0:0/7/physics_layer_0/polygon_0/points = PackedVector2Array(40.5, -31, -39.5, 9, -39.5, -15, 40.5, -55)
 4:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qsv6y"]
+texture = ExtResource("1_3ysh4")
+texture_region_size = Vector2i(128, 64)
+use_texture_padding = false
+0:5/size_in_atlas = Vector2i(2, 3)
+0:5/0 = 0
+1:3/size_in_atlas = Vector2i(2, 2)
+1:3/0 = 0
+
 [resource]
 resource_local_to_scene = true
 tile_shape = 1
@@ -203,3 +214,4 @@ sources/1 = SubResource("TileSetAtlasSource_fa1vh")
 sources/2 = SubResource("TileSetAtlasSource_xpb3e")
 sources/3 = SubResource("TileSetAtlasSource_aki5c")
 sources/4 = SubResource("TileSetAtlasSource_ec70s")
+sources/6 = SubResource("TileSetAtlasSource_qsv6y")
