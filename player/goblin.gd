@@ -3,12 +3,16 @@ class_name Player
 const MOTION_SPEED = 160 # Pixels/second.
 var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
+<<<<<<< Updated upstream
 var gameOverScreen
 var gameOver
 
 func _ready():
 	gameOverScreen = get_tree().root.get_node("Dungeon/GameoverScreen")
 	print(gameOverScreen.name)
+=======
+var teleportDefense = 0
+>>>>>>> Stashed changes
 
 var anim_directions = {
 	"idle": [ # list of [animation name, horizontal flip]
@@ -69,3 +73,17 @@ func lose_game():
 	gameOverScreen.show()
 	get_tree().paused = 1
 	print("PORAŻKA")
+<<<<<<< Updated upstream
+=======
+
+
+func _on_teleport_body_area_entered(area: Area2D) -> void:
+	if teleportDefense == 0: 
+		print("TELEPORT ENTERED")
+		teleportDefense = 1
+
+
+func _on_teleport_body_area_exited(area: Area2D) -> void:
+	print("TELEPORT LEFT")
+	teleportDefense = 0
+>>>>>>> Stashed changes

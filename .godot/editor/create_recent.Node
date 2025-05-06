@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 AnimatedSprite2D
 Node2D
 TileMap
@@ -5,6 +6,14 @@ Node
 TileMapLayer
 Area2D
 CollisionShape2D
+=======
+CollisionShape2D
+Area2D
+TileMap
+Node
+TileMapLayer
+Node2D
+>>>>>>> Stashed changes
 NavigationObstacle2D
 NavigationRegion2D
 RayCast2D

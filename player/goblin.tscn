@@ -1,4 +1,4 @@
-[gd_scene load_steps=266 format=3 uid="uid://bqpkxht3mx8l8"]
+[gd_scene load_steps=267 format=3 uid="uid://bqpkxht3mx8l8"]
 
 [ext_resource type="Texture2D" uid="uid://dpwpop61vufvt" path="res://player/goblin.png" id="1"]
 [ext_resource type="Script" uid="uid://qib7r2l3ev0d" path="res://player/goblin.gd" id="2"]
@@ -1899,6 +1899,8 @@ polygon = PackedVector2Array(16.25, 18.75, 18.75, 36.25, 15, 38.75, 6.25, 42.5, 
 radius = 20.0
 height = 52.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6o6w3"]
+
 [node name="Goblin" type="CharacterBody2D"]
 script = ExtResource("2")
 
@@ -1940,4 +1942,15 @@ shape = SubResource("CapsuleShape2D_cjrvi")
 one_way_collision = true
 debug_color = Color(0.984091, 0, 0.346881, 0.42)
 
+[node name="TeleportBody" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="Tepebox" type="CollisionShape2D" parent="TeleportBody"]
+scale = Vector2(1.71112, 1.12)
+shape = SubResource("CircleShape2D_6o6w3")
+debug_color = Color(0.718454, 0.480836, 0, 0.42)
+
 [connection signal="area_entered" from="Hitbody" to="Hitbody" method="_on_area_entered"]
+[connection signal="area_entered" from="TeleportBody" to="." method="_on_teleport_body_area_entered"]
+[connection signal="area_exited" from="TeleportBody" to="." method="_on_teleport_body_area_exited"]

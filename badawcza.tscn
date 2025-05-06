@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://da8hhhds05rm5"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://da8hhhds05rm5"]
+>>>>>>> Stashed changes
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1_wvkx5"]
 [ext_resource type="PackedScene" uid="uid://bqpkxht3mx8l8" path="res://player/goblin.tscn" id="2_ay15r"]
