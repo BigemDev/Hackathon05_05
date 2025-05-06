@@ -5,6 +5,8 @@ var last_direction = Vector2(1, 0)
 static var PLAYER_LOCATION := Vector2()
 var room_positions = {}
 var portalRecovery = false
+static var teleportationHistory
+var gameOverScreen
 
 var anim_directions = {
 	"idle": [ # list of [animation name, horizontal flip]
@@ -32,6 +34,9 @@ var anim_directions = {
 
 func _ready():
 	var rooms_scene = get_parent().get_parent().get_node("Rooms")
+	gameOverScreen = get_tree().root.get_node("Dungeon/GameoverScreen")
+	print(gameOverScreen.name)
+
 	
 
 	var aRooms = rooms_scene.get_children()
@@ -50,6 +55,7 @@ func _ready():
 func _physics_process(_delta):
 	#update player location
 	PLAYER_LOCATION = Vector2(global_position)
+	gameOverScreen.global_position = global_position
 	#print(PLAYER_LOCATION)
 	var motion = Vector2()
 	motion.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
@@ -75,18 +81,29 @@ func update_animation(anim_set):
 	$Sprite2D.play(anim_directions[anim_set][slice_dir][0])
 	$Sprite2D.flip_h = anim_directions[anim_set][slice_dir][1]
 
-static func lose_game():
+func lose_game():
+	gameOverScreen.show()
+	get_tree().paused = 1
 	print("PORAŻKA")
 
 func _on_portalbody_area_entered(area: Area2D) -> void:
 	if not portalRecovery:
 		print("Portal entered")
-		#print(area.name)
-		#position = room_positions[str(area.name)].global_position
-		#position = room_positions["room2"].global_position
+		portalRecovery = true
+		position = room_positions[str(area.name)].global_position
+
 
 func _on_portalbody_area_exited(area: Area2D) -> void:
-	portalRecovery = true
-	print(area.name)
-	#print("Portal exited")
+	print("Portal exit")
+	var teleportationPosition = room_positions[str(area.name)].global_position
+	print(teleportationPosition)
+	teleportationHistory = teleportationPosition
+	get_parent().get_node("Enemy").countDown()
+	var timer = get_tree().root.get_node("Dungeon/Timer")
+	timer.start() 
+	await timer.timeout
+
+
+func _on_Timer_timeout():
+	print("refresh teleport cooldown")
 	portalRecovery = false

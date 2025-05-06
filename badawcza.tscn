@@ -16,7 +16,7 @@
 [ext_resource type="Script" path="res://ucieczka.gd" id="14_y7mt4"]
 [ext_resource type="Texture2D" uid="uid://dn7fc6fvy4exn" path="res://tileset/ARK.png" id="15_y7mt4"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sggoh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y7mt4"]
 texture = ExtResource("3_dnoey")
 20:28/size_in_atlas = Vector2i(3, 4)
 20:28/0 = 0
@@ -33,7 +33,7 @@ texture = ExtResource("3_dnoey")
 
 [sub_resource type="TileSet" id="TileSet_ay15r"]
 tile_shape = 1
-sources/1 = SubResource("TileSetAtlasSource_sggoh")
+sources/1 = SubResource("TileSetAtlasSource_y7mt4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hgl3"]
 texture = ExtResource("15_y7mt4")

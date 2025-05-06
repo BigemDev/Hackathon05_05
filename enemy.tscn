@@ -1937,3 +1937,9 @@ position = Vector2(0, -31)
 shape = SubResource("CapsuleShape2D_4gyqm")
 one_way_collision = true
 debug_color = Color(0.984091, 0, 0.346881, 0.42)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
