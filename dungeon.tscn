@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cj3kyrrcqcaij"]
+[gd_scene load_steps=6 format=3 uid="uid://cj3kyrrcqcaij"]
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1"]
 [ext_resource type="PackedScene" uid="uid://bqpkxht3mx8l8" path="res://player/goblin.tscn" id="3"]
-[ext_resource type="PackedScene" uid="uid://dkprlddkwifk2" path="res://enemy.tscn" id="3_noicg"]
+[ext_resource type="PackedScene" uid="uid://br2kqw4fm086k" path="res://enemy.tscn" id="3_noicg"]
+[ext_resource type="Texture2D" uid="uid://beia5ijhre8ag" path="res://gameover screen.png" id="4_orq0m"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_noicg"]
 vertices = PackedVector2Array(708.789, 519.219, 565.594, 441.352, 867.898, 289.711, 382.398, 367.133, 268.219, 313.133, 337.883, 218, 346.656, 218, 510.672, 317.938, 525.641, 194.211, 732.688, 188.008, 565.5, 112.422, 771.93, 9.20313, 1254.09, 381.188, 1147.18, 201.773, 1272.92, 278.93, 830.281, 585.75, 139.32, 197.758, 265.023, 211.961, 113.133, 301.313, 191.68, -86.9063, 335.172, -12.9922, 38.8438, 139.992, -218.656, 95.4609, 39.1719, 152.531)
@@ -48,3 +49,9 @@ color = Color(0.466667, 0.635294, 0.92549, 1)
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 modulate = Color(0.910621, 0.48145, 0.642578, 1)
 navigation_polygon = SubResource("NavigationPolygon_noicg")
+
+[node name="GameoverScreen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, 1)
+scale = Vector2(1.12827, 0.647893)
+texture = ExtResource("4_orq0m")

@@ -1,6 +1,6 @@
-[gd_scene load_steps=265 format=3 uid="uid://dkprlddkwifk2"]
+[gd_scene load_steps=265 format=3 uid="uid://br2kqw4fm086k"]
 
-[ext_resource type="Script" uid="uid://cr6kkox10fpum" path="res://enemy.gd" id="1_4gyqm"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://dpwpop61vufvt" path="res://player/goblin.png" id="2_qi2p4"]
 
 [sub_resource type="Gradient" id="662"]
