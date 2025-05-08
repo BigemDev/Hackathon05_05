@@ -2,6 +2,9 @@
 ### Repo opened: 5/5/2025
 ### Upt. 6/5/2025
 
+hello mister
+![image](https://github.com/user-attachments/assets/ec7771fe-df62-4373-8de4-5812362ff484)
+
 ### Importante
 Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of the game is predicted to take around 1h - 1.5h to complete a full run. The most enticing part is a future use of a learning algorythm for Enemy(ies), which is not yet implemented as of time of writing this update, but should be considered a priority after fixing current bugs. 
 
@@ -21,8 +24,8 @@ Demo version (6/5/2025) can be played for mostly 5-10 minutes. Full version of t
 
   
 ### Todo
-- [] teleportation fixes 
-- [] loading time of the map --> to check if particular combination of the labirynth occurs, which excludes a part of the map, to prevent this possibility
+- [] loading time of the map --> to check if particular combination of the labirynth occurs, which excludes a part of the map, to prevent this possibility (it can happen pretty often)
+- [] enemy REDPILOWIEC does not have a proper collision box made 
 - [] mini-map
 - [] AI enemies responding to player's actions on the course of a single run
 - [] flashlight mechanic
