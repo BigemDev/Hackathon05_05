@@ -1,6 +1,6 @@
 ### Status: Cooking
 ### Repo opened: 5/5/2025
-### Upt. 6/5/2025
+### Upt. 8/5/2025
 
 hello mister
 ![image](https://github.com/user-attachments/assets/ec7771fe-df62-4373-8de4-5812362ff484)
