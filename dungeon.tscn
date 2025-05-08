@@ -20,9 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://d3ok7hfmr3blp" path="res://you_won_screen.png" id="18_77ujo"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_orq0m"]
-vertices = PackedVector2Array(8488.31, 751.711, -4727.68, 7812.96, -14191.9, -281.523, -3968.89, -6352.42)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-14209, -283, -4729, 7825, 8509, 752, -3969, -6364)])
+vertices = PackedVector2Array(5515.14, -943.828, 8488.31, 751.711, -4727.68, 7812.96, -3968.89, -6352.42, -14191.9, -281.523)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 0, 2, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-14209, -283, -4729, 7825, 8509, 752, 5520.09, -952.524, -3969, -6364)])
 
 [sub_resource type="TileSet" id="TileSet_noicg"]
 
@@ -67,7 +67,6 @@ light_mask = 0
 color = Color(0.466667, 0.635294, 0.92549, 1)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-visible = false
 modulate = Color(0.910621, 0.48145, 0.642578, 1)
 position = Vector2(8551, -3431)
 navigation_polygon = SubResource("NavigationPolygon_orq0m")

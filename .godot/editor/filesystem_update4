@@ -1,8 +1,6 @@
-res://dungeon.tscn
-res://tileset/tileset.tres
 res://tileset/tileset_edit.tscn
+res://tileset/tileset.tres
 res://enemy.tscn
+res://dungeon.tscn
 res://badawcza.tscn
-res://enemy_test.tscn
 res://player/goblin.tscn
-res://player/goblin.gd

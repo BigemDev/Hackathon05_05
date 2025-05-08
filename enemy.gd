@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var navigation: NavigationRegion2D
 
-const MOTION_SPEED = 155 # Pixels/second.
+const MOTION_SPEED = 150 # Pixels/second.
 
 var direction = Vector2.ZERO
 var last_direction = Vector2.RIGHT

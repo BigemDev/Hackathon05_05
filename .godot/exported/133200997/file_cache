@@ -1,0 +1,14 @@
+res://decorations/bone_pile_1.tscn::00afe65cfe86c7d76f2914213619ab49::1746467099::res://.godot/exported/133200997/export-8837d7f9ca880f5dfa44eaf130f73d10-bone_pile_1.scn
+res://decorations/bone_pile_2.tscn::b1dcb6ddda655be8021792dc1fbb534e::1746467099::res://.godot/exported/133200997/export-c1675407259475e2ce67e5458a047eea-bone_pile_2.scn
+res://decorations/candle.tscn::eef0809a32d5f266aa7725ee8ae0fbb5::1746467099::res://.godot/exported/133200997/export-0530c3c5989ca33b5df23f31918f274f-candle.scn
+res://decorations/coin_pile.tscn::7197e936e1ecafcd5a1c75604b9b375d::1746467099::res://.godot/exported/133200997/export-c25d5d31163f8841a70780e670310e24-coin_pile.scn
+res://decorations/internal_shadow.tscn::3aec85a3e1459efc4120d2c997e242f2::1746467099::res://.godot/exported/133200997/export-f4197037f6f12ae5554673e24b5627e7-internal_shadow.scn
+res://decorations/vase_1.tscn::f26cb3ce775d2789d9e701e280792b92::1746467099::res://.godot/exported/133200997/export-2aa9f87d3d15fdd433863e8c2d69a3c9-vase_1.scn
+res://decorations/vase_2.tscn::83a045b69b6933a3820ea7e1d6c428a1::1746467099::res://.godot/exported/133200997/export-78a64409ace852f89fadd55d8d20f513-vase_2.scn
+res://player/goblin.tscn::5ff50023c3168d0e0d4822b96f31d588::1746559816::res://.godot/exported/133200997/export-b7efc2b44d2674e5687c6fe8ddfd7031-goblin.scn
+res://tileset/tileset.tres::7f097efc13d35a33cd5cebe0c03ad346::1746559317::res://.godot/exported/133200997/export-6943219235531a85766f06d2a9c7244b-tileset.res
+res://tileset/tileset_edit.tscn::f698dca9fdd3f21975467da9a7122ba5::1746559816::res://.godot/exported/133200997/export-83566f2bbd2bce882579210a69b2fa1e-tileset_edit.scn
+res://badawcza.tscn::bbd30b8aa13921a3624dba02ad04efac::1746559816::res://.godot/exported/133200997/export-f7b9e76e26db4e9d55307f791e283c1e-badawcza.scn
+res://dungeon.tscn::5f4c05bdd71042644aee47a01e265346::1746560348::res://.godot/exported/133200997/export-881a8a99042672016260a1f24326859a-dungeon.scn
+res://enemy.tscn::0e0e4173cfb041d124caca610af263e8::1746559816::res://.godot/exported/133200997/export-ec12bd2205a8e44213188668d747d7fa-enemy.scn
+res://enemy_test.tscn::ec7338ceb0a56a5db01b430611e4d3b5::1746520583::res://.godot/exported/133200997/export-b800cd25018067eba99eb8a3122c0f90-enemy_test.scn
