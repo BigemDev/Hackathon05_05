@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://con0ttnxk110b"]
+[gd_scene load_steps=28 format=3 uid="uid://con0ttnxk110b"]
 
 [ext_resource type="TileSet" uid="uid://ceswxvl27cesm" path="res://tileset/tileset.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://chxu7ynvov7yj" path="res://tileset/szafka.png" id="2_85cul"]
@@ -10,14 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://b7sib5rxxwa01" path="res://biblia.webp" id="6_k21r5"]
 [ext_resource type="Script" uid="uid://cedbpdc05w280" path="res://cyferki_przycisk.gd" id="7_5grt3"]
 [ext_resource type="Texture2D" uid="uid://jx1vpowdf0mc" path="res://cyferki.jpg" id="8_ou4rh"]
-[ext_resource type="Script" path="res://komputer_cyferki_przycisk.gd" id="9_tkvb4"]
-[ext_resource type="Script" path="res://zatwierdz_przepisanie.gd" id="10_ojnyd"]
-[ext_resource type="Script" path="res://komputer_kontrolny_przycisk.gd" id="11_0luh7"]
-[ext_resource type="Script" path="res://zatwierdz_haslo.gd" id="12_k67ek"]
+[ext_resource type="Script" uid="uid://djdn2kjextqu6" path="res://komputer_cyferki_przycisk.gd" id="9_tkvb4"]
+[ext_resource type="Script" uid="uid://dp0ngoxf4eub3" path="res://zatwierdz_przepisanie.gd" id="10_ojnyd"]
+[ext_resource type="Script" uid="uid://cck4s5j53wtl7" path="res://komputer_kontrolny_przycisk.gd" id="11_0luh7"]
+[ext_resource type="Script" uid="uid://bdu8npqa801ve" path="res://zatwierdz_haslo.gd" id="12_k67ek"]
 [ext_resource type="Texture2D" uid="uid://dn7fc6fvy4exn" path="res://tileset/ARK.png" id="16_ynsks"]
 [ext_resource type="Texture2D" uid="uid://beia5ijhre8ag" path="res://gameover screen.png" id="17_85cul"]
 [ext_resource type="Script" uid="uid://b3g1728djeslc" path="res://ucieczka.gd" id="17_pedrn"]
 [ext_resource type="Texture2D" uid="uid://d3ok7hfmr3blp" path="res://you_won_screen.png" id="18_77ujo"]
+[ext_resource type="Texture2D" uid="uid://dfdsdmgr1vl6a" path="res://gg.jpg" id="19_v3ata"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_orq0m"]
 vertices = PackedVector2Array(5515.14, -943.828, 8488.31, 751.711, -4727.68, 7812.96, -3968.89, -6352.42, -14191.9, -281.523)
@@ -928,5 +929,11 @@ visible = false
 position = Vector2(584, 324)
 scale = Vector2(1.125, 0.636719)
 texture = ExtResource("18_77ujo")
+
+[node name="LoadingScreen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(584, 324)
+scale = Vector2(1.125, 0.636719)
+texture = ExtResource("19_v3ata")
 
 [connection signal="timeout" from="Timer" to="Walls3/Goblin" method="_on_timer_timeout"]
